@@ -1,4 +1,4 @@
-include_directories("/home/ubuntu/pcl-1.7.2/thirdparty/Eigen")
+include_directories("/us/include/eigen3")
 include_directories("/home/ubuntu/pcl-1.7.2/thirdparty/boost")
 
 set(build TRUE)
@@ -170,7 +170,7 @@ if(build)
     include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 add_library(
-${PROJECT_NAME}.common
+${PROJECT_NAME}.common SHARED
 ${srcs} ${kissfft_srcs} ${incs} ${common_incs} ${impl_incs} ${ros_incs} ${tools_incs} ${kissfft_incs} ${common_incs_impl} ${range_image_incs} ${range_image_incs_impl}
 
 )

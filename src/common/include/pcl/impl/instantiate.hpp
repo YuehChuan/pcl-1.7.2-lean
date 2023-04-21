@@ -42,7 +42,7 @@
 #pragma GCC system_header 
 #endif
 
-#include <pcl/pcl_config.h>
+//#include <pcl/pcl_config.h>
 
 //#define PCL_POINT_TYPES (bool)(int)(float)(double)
 //#define PCL_TEMPLATES (Type)(Othertype)
